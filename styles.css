@@ -6,13 +6,13 @@
 
 :root {
     --primary: #0ea5e9;
-    --primary-glow: rgba(14, 165, 233, 0.4);
-    --secondary: #8b5cf6;
-    --secondary-glow: rgba(139, 92, 246, 0.3);
-    --accent: #10b981;
-    --navy-base: #020617;
-    --navy-card: rgba(15, 23, 42, 0.6);
-    --text-main: #ffffff;
+    --primary-glow: rgba(14, 165, 233, 0.25);
+    --secondary: #14b8a6;
+    --secondary-glow: rgba(20, 184, 166, 0.20);
+    --accent: #06b6d4;
+    --navy-base: #0b0f19;
+    --navy-card: rgba(18, 24, 38, 0.45);
+    --text-main: #f8fafc;
     --text-dim: #94a3b8;
     
     --grad-animated: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent), var(--primary));
@@ -38,17 +38,17 @@ body {
     position: fixed;
     top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1;
     overflow: hidden;
-    background: radial-gradient(circle at 50% 0%, #0a1128 0%, var(--navy-base) 100%);
+    background: radial-gradient(circle at 50% 0%, #101827 0%, var(--navy-base) 100%);
 }
 .blob {
     position: absolute; width: 800px; height: 800px;
     filter: blur(120px); border-radius: 50%;
     animation: move 25s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0.5;
+    opacity: 0.6;
 }
 .blob-1 { top: -20%; left: -10%; background: var(--primary-glow); }
 .blob-2 { bottom: -20%; right: -10%; background: var(--secondary-glow); animation-delay: -10s; }
-.blob-3 { top: 40%; left: 40%; width: 600px; height: 600px; background: rgba(16, 185, 129, 0.15); animation-direction: alternate-reverse; }
+.blob-3 { top: 40%; left: 40%; width: 600px; height: 600px; background: rgba(6, 182, 212, 0.15); animation-direction: alternate-reverse; }
 
 @keyframes move {
     0% { transform: translate(0, 0) scale(1); }
@@ -194,6 +194,6 @@ h2.display-5 { font-weight: 800; letter-spacing: -0.5px; }
 ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.3); }
 
 /* Footer */
-footer { padding: 100px 0 40px 0; border-top: 1px solid rgba(255,255,255,0.05); background: linear-gradient(0deg, #0a1128 0%, var(--navy-base) 100%);}
+footer { padding: 100px 0 40px 0; border-top: 1px solid rgba(255,255,255,0.05); background: linear-gradient(0deg, #0e1422 0%, var(--navy-base) 100%);}
 footer a { color: var(--text-dim); text-decoration: none; transition: color 0.3s; }
 footer a:hover { color: var(--primary); }
