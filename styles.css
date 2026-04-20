@@ -10,8 +10,8 @@
     --secondary: #14b8a6;
     --secondary-glow: rgba(20, 184, 166, 0.20);
     --accent: #06b6d4;
-    --navy-base: #0b0f19;
-    --navy-card: rgba(18, 24, 38, 0.45);
+    --navy-base: #070707;
+    --navy-card: rgba(22, 22, 22, 0.6);
     --text-main: #f8fafc;
     --text-dim: #94a3b8;
     
@@ -38,7 +38,7 @@ body {
     position: fixed;
     top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1;
     overflow: hidden;
-    background: radial-gradient(circle at 50% 0%, #101827 0%, var(--navy-base) 100%);
+    background: radial-gradient(circle at 50% 0%, #141414 0%, var(--navy-base) 100%);
 }
 .blob {
     position: absolute; width: 800px; height: 800px;
@@ -194,6 +194,6 @@ h2.display-5 { font-weight: 800; letter-spacing: -0.5px; }
 ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.3); }
 
 /* Footer */
-footer { padding: 100px 0 40px 0; border-top: 1px solid rgba(255,255,255,0.05); background: linear-gradient(0deg, #0e1422 0%, var(--navy-base) 100%);}
+footer { padding: 100px 0 40px 0; border-top: 1px solid rgba(255,255,255,0.05); background: linear-gradient(0deg, #111111 0%, var(--navy-base) 100%);}
 footer a { color: var(--text-dim); text-decoration: none; transition: color 0.3s; }
 footer a:hover { color: var(--primary); }
